@@ -12,7 +12,8 @@ const introdata = {
         third: "I consult on language learning apps",
     },
     description: `Professional Language Tutor | Ukrainian-English-Russian Translator | Writer | Songwriter | Poet | Creator`,    
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    // your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    your_img_url: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/best_alina_screenshot",
 };
 
 const dataabout = {
@@ -62,11 +63,11 @@ const skills = [{
     },
     {
         name: "Translation",
-        value: 90,
+        value: 95,
     },
     {
         name: "Poetry Translation",
-        value: 95,
+        value: 100,
     }
 ];
 
@@ -155,7 +156,7 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
+    YOUR_EMAIL: "zelinskayaalinaig@gmail.com",
     YOUR_FONE: "(555)123-4567",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
     // creat an emailjs.com account 
@@ -168,8 +169,8 @@ const contactConfig = {
 const socialprofils = {
     github: "https://github.com",
     facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    linkedin: "https://www.linkedin.com/in/alina-zelinska-60317a281/",
+    instagram: "https://www.instagram.com/alin.a.zelinska/",
 };
 export {
     meta,

@@ -146,7 +146,7 @@ section {
 }
 
 .ac_btn .one {
-    background-color: #000;
+    background-color: #000000;
     transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -3;
     z-index: -4;
@@ -172,7 +172,7 @@ section {
 
 #button_h:hover {
     color: var(--primary-color)
-}
+}Z
 
 .intro_sec .h_bg-image .block {
     bottom: 50vh;
