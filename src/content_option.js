@@ -129,30 +129,35 @@ const dataportfolio = [{
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/300/?grayscale",
+        img: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/alinacove.png",
+        description: "'Alina is an amaing teacher with a good mix of different excersizes to keep things fresh and interesting.' - Richard Pfleger, 9 Ukrainian Lessons",
+        link: "#",
+    },
+    {
+        img: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/alinasunflower.png",
+        description: "She helped me remember some sounds with a bit of pop culture. Looking forward to the next lesson!",
+        link: "#",
+    },
+    {
+        img: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/alinapiano.png",
+        description: "'Great first Ukrainian lesson with Alina, she has totally personalized the lesson to my needs. It's been super useful and helpful. She's got a lot of patience and she knows how to make the lesson fun and entertaining. Totally recommendable, will repeat :) Thank you!'",
+        link: "#",
+    },
+    {
+        img: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/alinamic.png",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
+        img: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/alinabw.png",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/550/?grayscale",
+        img: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/DALL%C2%B7E%202023-09-28%2011.26.29%20-%20fadeing%20into%20a%20pink%20background.png",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+    }
 ];
 
 const contactConfig = {
