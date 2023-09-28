@@ -92,38 +92,38 @@ const services = [{
     }];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
+        img: "https://storage.googleapis.com/matermemoriae/AlinaReviews/Screen%20Shot%202023-09-28%20at%208.07.03%20AM.png",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
+        img: "https://storage.googleapis.com/matermemoriae/AlinaReviews/Screen%20Shot%202023-09-28%20at%208.07.12%20AM.png",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
+        img: "https://storage.googleapis.com/matermemoriae/AlinaReviews/Screen%20Shot%202023-09-28%20at%208.07.23%20AM.png",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/600/?grayscale",
+        img: "https://storage.googleapis.com/matermemoriae/AlinaReviews/Screen%20Shot%202023-09-28%20at%208.07.40%20AM.png",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/300/?grayscale",
+        img: "https://storage.googleapis.com/matermemoriae/AlinaReviews/Screen%20Shot%202023-09-28%20at%208.07.48%20AM.png",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/700/?grayscale",
+        img: "https://storage.googleapis.com/matermemoriae/AlinaReviews/Screen%20Shot%202023-09-28%20at%208.07.59%20AM.png",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
 
     {
-        img: "https://picsum.photos/400/600/?grayscale",
+        img: "https://storage.googleapis.com/matermemoriae/AlinaReviews/Screen%20Shot%202023-09-28%20at%208.08.06%20AM.png",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
