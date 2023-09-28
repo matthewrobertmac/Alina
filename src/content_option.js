@@ -1,17 +1,23 @@
 const logotext = "ALINA";
 const meta = {
-    title: "Alina Zelenska",
-    description: "I’m Alina Zelenska _ Ukrainian / Russian / English language tutor _ Poet & Writer _ currently working in Poland",
+    title: "Alina Zelinska",
+    description: "I’m Alina Zelinska _ Ukrainian / Russian / English language tutor _ Poet & Writer _ currently working in Poland",
 };
 
 const introdata = {
-    title: "I’m Alina Zelenska",
+    title: "I’m Alina Zelinska",
     animated: {
         first: "I love helping people learn languages",
         second: "I write multilingual poetry",
         third: "I consult on language learning apps",
     },
-    description: `Experienced language teacher with a passion for creative writing and a talent for translating poetry. Fluent in English, Ukrainian, and Russian, I have spent years honing my teaching skills and immersing myself in the beauty of language. My love for languages extends beyond teaching, as I thoroughly enjoy writing poems and translating them to and from various languages. Currently, I am expanding my linguistic repertoire by learning Spanish.
+    description: `Professional Language Tutor | Ukrainian-English-Russian Translator | Writer | Songwriter | Poet | Creator`,    
+    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+};
+
+const dataabout = {
+    title: "A bit about my self",
+    aboutme: `Experienced language teacher with a passion for creative writing and a talent for translating poetry. Fluent in English, Ukrainian, and Russian, I have spent years honing my teaching skills and immersing myself in the beauty of language. My love for languages extends beyond teaching, as I thoroughly enjoy writing poems and translating them to and from various languages. Currently, I am expanding my linguistic repertoire by learning Spanish.
 
     My teaching methods combine cultural understanding with interactive and engaging lessons, fostering an environment that encourages language exploration and creativity.
     
@@ -20,12 +26,6 @@ const introdata = {
     Driven by a deep passion for words and language, I am eager to take on new challenges and opportunities that allow me to create and write. Whether it be crafting my own works or breathing life into the words of others through translation.
     
     If you have a project that requires linguistic expertise, a creative touch, and a dedication to preserving the essence of the written word, I would love to connect and collaborate. I'll help you to promote your brand and sell any kind of product by writing articles & posts to your or your brand's social media!`,
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
-};
-
-const dataabout = {
-    title: "A bit about my self",
-    aboutme: "Professional Language Tutor | Ukrainian-English-Russian Translator | Writer | Songwriter | Poet | Creator",
 };
 const worktimeline = [{
         jobtitle: "language tutor",

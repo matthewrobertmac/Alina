@@ -183,7 +183,7 @@ section {
     width: 250px;
     height: 220px;
     border-radius: 100%;
-    /* mix-blend-mode: multiply; */
+    mix-blend-mode: multiply; 
     background-color: #2f514e;
     z-index: 9999999999;
     display: flex;
