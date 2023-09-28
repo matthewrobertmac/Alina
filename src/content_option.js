@@ -24,61 +24,72 @@ const introdata = {
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "A bit about my self",
+    aboutme: "Professional Language Tutor | Ukrainian-English-Russian Translator | Writer | Songwriter | Poet | Creator",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "language tutor",
+        where: "italki",
+        date: "Apr 2022 - Present",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Founder and entrepreneur",
+        where: "Eco.April.Shampoo",
+        date: "Apr 2021 - Feb 2022",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Co-founder and entrepreneur",
+        where: "CraftGames.ua",
+        date: "Jul 2020 - Feb 2022",
     },
 ];
 
 const skills = [{
-        name: "Python",
+        name: "Ukrainian",
+        value: 100,
+    },
+    {
+        name: "Russian",
+        value: 100,
+    },
+    {
+        name: "English",
+        value: 100,
+    },
+    {
+        name: "Spanish",
+        value: 85,
+    },
+    {
+        name: "Translation",
         value: 90,
     },
     {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
-    {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
-        value: 85,
-    },
+        name: "Poetry Translation",
+        value: 95,
+    }
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Language Tutoring",
+        description: "Available in Russian, Ukrainian, or English.",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Mobile App Consulting",
+        description: "Available for consulting for language learning machine learning applications.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Social Media Ghostwriting",
+        description: "Are you trying to reach a new audience? React out!",
     },
-];
+    {
+        title: "Poetry Translation",
+        description: "Available for translating poetry to and from Russian, Ukrainian, and English.",
+    },
+    {
+        title: "Creative Writing",
+        description: "Available for creative writing projects.",
+    }];
 
 const dataportfolio = [{
         img: "https://picsum.photos/400/?grayscale",
