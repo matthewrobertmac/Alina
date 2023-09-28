@@ -125,11 +125,11 @@ const dataportfolio = [{
 
     {
         img: "https://storage.googleapis.com/matermemoriae/AlinaReviews/Screen%20Shot%202023-09-28%20at%208.08.06%20AM.png",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "This lesson was perfect for practicing speaking and I look forward to further lessons in the future. Alina is nice, patient, and willing to help with whatever questions you may have.",
         link: "#",
     },
     {
-        img: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/alinacove.png",
+        img: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/alinahorse1.png",
         description: "'Alina is an amaing teacher with a good mix of different excersizes to keep things fresh and interesting.' - Richard Pfleger, 9 Ukrainian Lessons",
         link: "#",
     },
@@ -145,17 +145,17 @@ const dataportfolio = [{
     },
     {
         img: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/alinamic.png",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "I've been taking weekly Ukrainian conversation practice lessons with Alina for several months now and have seen a real improvement in my conversation skills!",
         link: "#",
     },
     {
         img: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/alinabw.png",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        description: "Alina clearly takes an interest in her students and is excellent at guiding a conversation to help a student produce output and be creative with the language. Highly recommend!",
         link: "#",
     },
     {
-        img: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/DALL%C2%B7E%202023-09-28%2011.26.29%20-%20fadeing%20into%20a%20pink%20background.png",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
+        img: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/alinaprof2.png",
+        description: "Great lesson!! Alina helped me in the category I require the most practice which is conversational practice and she definitely streched out the Ukrainian that was hidden in my brain!! definitely will have more lessons with her!! amazing teacher!!",
         link: "#",
     }
 ];
