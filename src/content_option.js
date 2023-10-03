@@ -13,7 +13,8 @@ const introdata = {
     },
     description: `Professional Language Tutor | Ukrainian-English-Russian Translator | Writer | Songwriter | Poet | Creator`,    
     // your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
-    your_img_url: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/best_alina_screenshot",
+    // your_img_url: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/best_alina_screenshot",
+    your_img_url: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/alina_pink_4x_GOOD_transparent.png"
 };
 
 const dataabout = {
