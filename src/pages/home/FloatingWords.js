@@ -187,7 +187,42 @@ const words = [
   "Цукор - Sugar",
   "Перець - Pepper",
 ]
-  
+
+  // Extracted vocabulary
+// It's My Life - Bon Jovi, in Ukrainian
+// const words = [
+//   "сонет - sonnet",
+//   "серце - heart",
+//   "молитва - prayer",
+//   "зневірений - disillusioned",
+//   "світ - world",
+//   "юрба - crowd",
+//   "мовчати - to be silent",
+//   "горлати - to shout",
+//   "жити - to live",
+//   "тут - here",
+//   "зараз - now",
+//   "життя - life",
+//   "раз - time",
+//   "дишу - breathe",
+//   "груди - breasts/chest",
+//   "автострада - highway",
+//   "правда - truth",
+//   "співати - to sing",
+//   "битися - to fight",
+//   "тяжкий - heavy/difficult",
+//   "щасливий - lucky",
+//   "сильний - strong",
+//   "шануватися - to respect",
+//   "кріпитися - to hold on",
+//   "стояти - to stand",
+//   "струнко - upright",
+//   "кличуть - (they) call",
+//   "бій - fight",
+//   "спина - back",
+//   "задкувати - to retreat",
+// ]
+
   const getRandomWord = () => {
     return words[Math.floor(Math.random() * words.length)];
   };
