@@ -1,0 +1,29 @@
+.floating-words {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure words are in the background */
+  }
+  
+  .floating-word {
+    position: absolute;
+    font-size: 30px;
+    opacity: 0.3;
+    animation: float 10s ease-in infinite;
+    color: white; /* Choose a suitable text color */
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
