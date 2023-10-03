@@ -179,7 +179,7 @@ const dataportfolio = [{
 
 const contactConfig = {
     YOUR_EMAIL: "zelinskayaalinaig@gmail.com",
-    YOUR_FONE: "(555)123-4567",
+    YOUR_FONE: "(555) 123-4567",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
@@ -189,8 +189,8 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
+    // github: "https://github.com",
+    // facebook: "https://facebook.com",
     linkedin: "https://www.linkedin.com/in/alina-zelinska-60317a281/",
     instagram: "https://www.instagram.com/alin.a.zelinska/",
 };
