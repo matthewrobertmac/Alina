@@ -124,8 +124,8 @@ const words = [
   const getRandomSpeed = () => Math.random() * 2 - 1; // speed between -1 and 1
   const getRandomOpacity = () => Math.random();
   
-  const MAX_SPEED = 0.05;
-  const MIN_SPEED = 0.01;
+  const MAX_SPEED = 0.03;
+  const MIN_SPEED = 0.004;
   
   const clampSpeed = (speed) => {
       return Math.min(MAX_SPEED, Math.max(MIN_SPEED, Math.abs(speed)));
