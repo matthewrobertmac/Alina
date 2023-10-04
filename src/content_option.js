@@ -15,7 +15,9 @@ const introdata = {
     // your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
     // your_img_url: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/best_alina_screenshot",
     // your_img_url: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/alina_pink_4x_GOOD_transparent.png",
-    your_img_url: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/Alina_DSC03468_nobackground.png",
+    // big 10 mb hq image, but problem with hair
+    // your_img_url: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/Alina_DSC03468_nobackground.png",
+    your_img_url: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/Alina_fixedhair_rightsize.png",
     // your_img_url: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/alina_washout_transparent_pink.png",
 };
 
