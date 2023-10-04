@@ -114,6 +114,183 @@ const words = [
     'Вниз - Down'
   ];
 
+  const getRandomWord = () => words[Math.floor(Math.random() * words.length)];
+  const getRandomCoord = () => Math.random() * 100;
+  const getRandomSize = () => Math.random() * 20 + 15;
+  const getRandomSpeed = () => Math.random() * 2 - 1;
+  const getRandomOpacity = () => Math.random();
+  const MAX_SPEED = 0.03;
+  const MIN_SPEED = 0.004;
+  
+  const clampSpeed = (speed) => Math.min(MAX_SPEED, Math.max(MIN_SPEED, Math.abs(speed)));
+  
+  export const FloatingWords = () => {
+    const [floatingWords, setFloatingWords] = useState([]);
+    const requestRef = useRef();
+  
+    const animate = () => {
+      setFloatingWords((prev) => prev.map((word) => {
+        if (word.isFrozen) return word; // Skip animation for frozen words
+        
+        let { x, y, vx, vy, ...rest } = word;
+        x += vx;
+        y += vy;
+        if (x < 0 || x > 100) vx = -vx;
+        if (y < 0 || y > 100) vy = -vy;
+        vx = clampSpeed(vx) * Math.sign(vx);
+        vy = clampSpeed(vy) * Math.sign(vy);
+  
+        return { x, y, vx, vy, ...rest };
+      }));
+      requestRef.current = requestAnimationFrame(animate);
+    };
+  
+    const toggleFreeze = (index) => {
+      console.log("Word clicked:", index); // Add this line to check
+      setFloatingWords((prev) =>
+        prev.map((word, i) => (i === index ? { ...word, isFrozen: !word.isFrozen } : word))
+      );
+    };
+      
+    useEffect(() => {
+      const intervalId = setInterval(() => {
+        setFloatingWords((prev) => {
+          if (prev.length >= 40) prev.shift();
+          return [...prev, {
+            word: getRandomWord(),
+            x: getRandomCoord(),
+            y: getRandomCoord(),
+            vx: getRandomSpeed(),
+            vy: getRandomSpeed(),
+            size: getRandomSize(),
+            opacity: getRandomOpacity(),
+            isFrozen: false,
+          }];
+        });
+      }, 1000);
+  
+      requestRef.current = requestAnimationFrame(animate);
+      return () => {
+        clearInterval(intervalId);
+        cancelAnimationFrame(requestRef.current);
+      };
+    }, []);
+  
+    return (
+      <div className="floating-words">
+        {floatingWords.map((props, index) => (
+          <div
+            key={index}
+            style={{
+              position: 'absolute',
+              top: `${props.y}vh`,
+              left: `${props.x}vw`,
+              fontSize: `${props.size}px`,
+              opacity: props.opacity,
+              color: props.isFrozen ? 'rgb(212,175,55)' : 'white',
+            }}
+            className="floating-word"
+            onClick={() => toggleFreeze(index)}
+          >
+            {props.word}
+          </div>
+        ))}
+      </div>
+    );
+  };
+  
+  // const getRandomWord = () => {
+  //   return words[Math.floor(Math.random() * words.length)];
+  // };
+  
+  // const getRandomCoord = () => Math.random() * 100;
+  // const getRandomSize = () => Math.random() * 20 + 15;
+  // const getRandomSpeed = () => Math.random() * 2 - 1; // speed between -1 and 1
+  // const getRandomOpacity = () => Math.random();
+  
+  // const MAX_SPEED = 0.03;
+  // const MIN_SPEED = 0.004;
+  
+  // const clampSpeed = (speed) => {
+  //     return Math.min(MAX_SPEED, Math.max(MIN_SPEED, Math.abs(speed)));
+  // };
+  
+  // export const FloatingWords = () => {
+  //   const [floatingWords, setFloatingWords] = useState([]);
+  //   const requestRef = useRef();
+  
+  //   const animate = () => {
+  //     setFloatingWords((prev) =>
+  //       prev.map((word) => {
+  //         let { x, y, vx, vy, ...rest } = word;
+  
+  //         // Move
+  //         x += vx;
+  //         y += vy;
+  
+  //         // Bounce off walls
+  //         if (x < 0 || x > 100) vx = -vx;
+  //         if (y < 0 || y > 100) vy = -vy;
+  
+  //         // Clamp speed
+  //         vx = clampSpeed(vx) * Math.sign(vx);
+  //         vy = clampSpeed(vy) * Math.sign(vy);
+  
+  //         return { x, y, vx, vy, ...rest };
+  //       })
+  //     );
+  //     requestRef.current = requestAnimationFrame(animate);
+  //   };
+  
+  //   useEffect(() => {
+  //     const intervalId = setInterval(() => {
+  //       setFloatingWords((prev) => {
+  //         if (prev.length >= 40) {
+  //           prev.shift();
+  //         }
+  //         return [
+  //           ...prev,
+  //           {
+  //             word: getRandomWord(),
+  //             x: getRandomCoord(),
+  //             y: getRandomCoord(),
+  //             vx: getRandomSpeed(),
+  //             vy: getRandomSpeed(),
+  //             size: getRandomSize(),
+  //             opacity: getRandomOpacity(),
+  //           },
+  //         ];
+  //       });
+  //     }, 1000);
+  
+  //     requestRef.current = requestAnimationFrame(animate);
+  //     return () => {
+  //       clearInterval(intervalId);
+  //       cancelAnimationFrame(requestRef.current);
+  //     };
+  //   }, []);
+  
+  //   return (
+  //     <div className="floating-words">
+  //       {floatingWords.map((props, index) => (
+  //         <div
+  //           key={index}
+  //           style={{
+  //             position: 'absolute',
+  //             top: `${props.y}vh`,
+  //             left: `${props.x}vw`,
+  //             fontSize: `${props.size}px`,
+  //             opacity: props.opacity,
+  //           }}
+  //           className="floating-word"
+  //         >
+  //           {props.word}
+  //         </div>
+  //       ))}
+  //     </div>
+  //   );
+  // };
+            
 // const words = [
 //   "Напої - Beverages",
 //   "Вода - Water",
@@ -222,96 +399,3 @@ const words = [
 //   "спина - back",
 //   "задкувати - to retreat",
 // ]
-
-  const getRandomWord = () => {
-    return words[Math.floor(Math.random() * words.length)];
-  };
-  
-  const getRandomCoord = () => Math.random() * 100;
-  const getRandomSize = () => Math.random() * 20 + 15;
-  const getRandomSpeed = () => Math.random() * 2 - 1; // speed between -1 and 1
-  const getRandomOpacity = () => Math.random();
-  
-  const MAX_SPEED = 0.03;
-  const MIN_SPEED = 0.004;
-  
-  const clampSpeed = (speed) => {
-      return Math.min(MAX_SPEED, Math.max(MIN_SPEED, Math.abs(speed)));
-  };
-  
-  export const FloatingWords = () => {
-    const [floatingWords, setFloatingWords] = useState([]);
-    const requestRef = useRef();
-  
-    const animate = () => {
-      setFloatingWords((prev) =>
-        prev.map((word) => {
-          let { x, y, vx, vy, ...rest } = word;
-  
-          // Move
-          x += vx;
-          y += vy;
-  
-          // Bounce off walls
-          if (x < 0 || x > 100) vx = -vx;
-          if (y < 0 || y > 100) vy = -vy;
-  
-          // Clamp speed
-          vx = clampSpeed(vx) * Math.sign(vx);
-          vy = clampSpeed(vy) * Math.sign(vy);
-  
-          return { x, y, vx, vy, ...rest };
-        })
-      );
-      requestRef.current = requestAnimationFrame(animate);
-    };
-  
-    useEffect(() => {
-      const intervalId = setInterval(() => {
-        setFloatingWords((prev) => {
-          if (prev.length >= 40) {
-            prev.shift();
-          }
-          return [
-            ...prev,
-            {
-              word: getRandomWord(),
-              x: getRandomCoord(),
-              y: getRandomCoord(),
-              vx: getRandomSpeed(),
-              vy: getRandomSpeed(),
-              size: getRandomSize(),
-              opacity: getRandomOpacity(),
-            },
-          ];
-        });
-      }, 1000);
-  
-      requestRef.current = requestAnimationFrame(animate);
-      return () => {
-        clearInterval(intervalId);
-        cancelAnimationFrame(requestRef.current);
-      };
-    }, []);
-  
-    return (
-      <div className="floating-words">
-        {floatingWords.map((props, index) => (
-          <div
-            key={index}
-            style={{
-              position: 'absolute',
-              top: `${props.y}vh`,
-              left: `${props.x}vw`,
-              fontSize: `${props.size}px`,
-              opacity: props.opacity,
-            }}
-            className="floating-word"
-          >
-            {props.word}
-          </div>
-        ))}
-      </div>
-    );
-  };
-            
