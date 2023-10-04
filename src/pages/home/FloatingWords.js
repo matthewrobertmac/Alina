@@ -146,11 +146,18 @@ const words = [
     };
   
     const toggleFreeze = (index) => {
-        setFloatingWords((prev) =>
-            prev.map((word, i) => (i === index ? { ...word, isFrozen: !word.isFrozen } : word))
-        );
-    };
-  
+      setFloatingWords((prev) =>
+          prev.map((word, i) => {
+              if (i === index) {
+                  // Set opacity to 1 for the frozen word
+                  return { ...word, isFrozen: !word.isFrozen, opacity: 1 };
+              } else {
+                  return word;
+              }
+          })
+      );
+  };
+    
     useEffect(() => {
         const intervalId = setInterval(() => {
             setFloatingWords((prev) => {
