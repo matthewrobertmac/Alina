@@ -1,3 +1,8 @@
+body, html {
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 section {
     flex: 1 0 auto;
     position: relative;
@@ -30,6 +35,7 @@ section {
 
 .intro_sec .text,
 .intro_sec .h_bg-image {
+    box-sizing: border-box; /* Include padding and border in the total width */
     width: 100%;  
     display: inline-block;
     vertical-align: top;
@@ -51,17 +57,18 @@ section {
     }
 }
 
-.intro_sec .intro {
-    max-width: 450px;
-    margin: 0 auto;
+@media (max-width:500.98px) {
+    .intro_sec .text,
+    .intro_sec .h_bg-image {
+        width: 100%;
+    }
 }
 
-@media (max-width:991.98px) {
-    .intro_sec .intro {
-        max-width: 700px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+.intro_sec .intro {
+    max-width: 100%; /* Adjust for mobile */
+    margin: 0 auto;
+    padding-left: 10px;  /* Adjust for some padding */
+    padding-right: 10px;
 }
 
 .intro_sec .intro .feature .wrap-icon {
