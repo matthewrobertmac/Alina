@@ -1,5 +1,5 @@
-# Use an official Node runtime as a parent image
-FROM node:14-slim
+# Use an official Node runtime as a parent image. Use a newer version of Node.
+FROM node:16-slim
 
 # Set the working directory in the container to /app
 WORKDIR /app
@@ -10,7 +10,8 @@ COPY package*.json ./
 COPY yarn.lock ./
 
 # Install any needed packages using yarn or npm
-RUN yarn install --frozen-lockfile || npm install
+# Preferably using yarn when yarn.lock is available
+RUN if [ -f "yarn.lock" ]; then yarn install --frozen-lockfile; else npm install; fi
 
 # Copy everything else
 COPY . ./

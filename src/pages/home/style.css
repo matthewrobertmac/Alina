@@ -2,8 +2,6 @@ section {
     flex: 1 0 auto;
     position: relative;
     width: 100%;
-    -webkit-transition: all .5s ease-in;
-    -o-transition: all .5s ease-in;
     transition: all .5s ease-in;
 }
 
@@ -20,36 +18,33 @@ section {
     border-radius: 0;
 }
 
-.btn-portfolio a {
-    color: #000;
-    text-decoration: none;
-}
-
+.btn-portfolio a,
 .btn-about a {
-    color: var(--text-color);
     text-decoration: none;
 }
 
 .intro_sec {
-    height: calc(100vh - 60px);
-    min-height: 700px;
     height: 100vh;
     margin-top: -60px;
 }
 
-@media (max-width:991.98px) {
-    .intro_sec {
-        display: block;
-        height: auto!important;
-    }
-}
-
 .intro_sec .text,
 .intro_sec .h_bg-image {
-    width: 50%;
+    width: 100%;  
+    display: inline-block;
+    vertical-align: top;
 }
 
-@media (max-width:500.98px) {
+.intro_sec .h_bg-image {
+    width: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+@media (max-width:991.98px) {
     .intro_sec .text,
     .intro_sec .h_bg-image {
         width: 50%;
@@ -91,14 +86,6 @@ section {
     font-weight: 700;
 }
 
-.intro_sec .h_bg-image {
-    background-size: cover;
-    background-position: center;
-    min-height: 700px;
-    position: relative;
-    z-index: 0; /* Ensure the image is in front of the floating words */
-}
-
 .ac_btn {
     padding: 4px 19px;
     color: var(--secondary-color);
@@ -119,20 +106,9 @@ section {
     box-shadow: 8px 8px 0px var(--text-color), -8px -8px 0px var(--text-color);
 }
 
-.ac_btn:hover .one {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-}
-
-.ac_btn:hover .two {
-    transform: translate3d(0px, 0px, 0px);
-}
-
+.ac_btn:hover .one,
+.ac_btn:hover .two,
 .ac_btn:hover .three {
-    transform: translate3d(0px, 0px, 0px);
-}
-
-.ac_btn:hover .four {
     transform: translate3d(0px, 0px, 0px);
 }
 
@@ -146,21 +122,10 @@ section {
     transform: translate3d(0px, 90px, 0px);
 }
 
-.ac_btn .one {
-    background-color: #000000;
-    transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -3;
-}
-
-.ac_btn .two {
-    background-color: var(--primary-color);
-    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -3;
-}
-
+.ac_btn .one,
+.ac_btn .two,
 .ac_btn .three {
-    background-color: var(--secondary-color);
-    transition: all 0.7s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -3;
 }
 
@@ -173,13 +138,11 @@ section {
     color: var(--primary-color);
 }
 
-/* Set z-index for the home section container to create a stacking context */
 .home {
     position: relative;
     z-index: 0;
 }
 
-/* Set z-index for the floating words to ensure they are rendered behind the image */
 .floating-words {
     position: absolute;
     top: 0;
@@ -187,23 +150,12 @@ section {
     width: 100%;
     height: 100%;
     z-index: 1;
-    pointer-events: none;  /* Make sure only words are clickable */
+    pointer-events: none;
 }
 
 .floating-word {
-    pointer-events: auto;  /* Enable clickability for individual words */
-    /* ... other existing styles ... */
+    pointer-events: auto;
 }
-
-/* Masking for floating words (uncomment if needed and adjust the image path) */
-/*
-.floating-words {
-    mask-image: url('path-to-your-image.png');
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: cover;
-}
-*/
 
 .intro_sec .h_bg-image .block {
     bottom: 50vh;
