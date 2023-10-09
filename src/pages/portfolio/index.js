@@ -14,6 +14,7 @@ import {
 import { dataportfolio, meta } from "../../content_option";
 
 export const Portfolio = () => {
+
   return (
     <HelmetProvider>
       <Container sx={{ mt: 3, mb: 5 }}>
@@ -27,6 +28,7 @@ export const Portfolio = () => {
           </Typography>
           <hr style={{ backgroundColor: "#000", height: "1px", width: "50%", margin: '0 auto' }} />
         </Box>
+
         <Grid container spacing={3} sx={{ gap: '2rem', justifyContent: 'space-between' }}>
           {dataportfolio.map((data, i) => (
             <Grid item xs={12} md={4} key={i}>
@@ -35,61 +37,50 @@ export const Portfolio = () => {
                   maxWidth: 345,
                   transition: 'all 0.3s ease',
                   boxShadow: 3,
-                  background: (theme) => theme.palette.secondary.main,
+                  background: (theme) => theme.palette.mode === 'dark' ? 'var(--bg-color-dark)' : 'var(--bg-color-light)',
+                  color: (theme) => theme.palette.mode === 'dark' ? 'var(--text-color-dark)' : 'var(--text-color-light)',
+                  borderColor: (theme) => theme.palette.mode === 'dark' ? 'var(--secondary-color-dark)' : 'var(--primary-color-light)',
+                  borderWidth: 1,
+                  borderStyle: 'solid',
                   '&:hover': {
                     transform: 'scale(1.05)',
-                    boxShadow: 6
+                    boxShadow: '0 8px 20px rgba(0, 0, 0, 0.2)'
                   }
                 }}
               >
                 <CardActionArea>
                   <CardMedia
                     component="img"
-                    height="100"
+                    height="200"  // Made the image twice as big
                     image={data.img}
                     alt={`Photograph of ${data.author || "Anonymous"}`}
                     sx={{ 
                       objectFit: 'contain',
                       transition: 'transform 0.3s ease',
                       '&:hover': {
-                        transform: 'scale(1.05)'
+                        transform: 'scale(1.1)' // Enhanced hover effect
                       }
                     }}
                   />
                   <CardContent sx={{
-                    background: (theme) => theme.palette.background.paper,
+                    background: (theme) => theme.palette.mode === 'dark' ? 'var(--secondary-color-dark)' : 'var(--secondary-color-light)',
                     padding: 2
                   }}>
-                    <Typography variant="body2" color="text.secondary" sx={{ fontStyle: 'italic', mb: 2 }}>
-                      {data.description}
+                    <Typography variant="body2" color="text.secondary" sx={{ 
+                        fontStyle: 'italic', 
+                        mb: 2,
+                        color: (theme) => theme.palette.mode === 'dark' ? 'var(--primary-color-dark)' : 'var(--text-color-light)'
+                    }}>
+                        {data.description}
                     </Typography>
                     <Typography variant="caption" display="block" gutterBottom>
-                      Language: {data.language || "Unknown"} | Lessons: {data.lessons || "Unknown"}
+                        Language: {data.language || "Unknown"} | Lessons: {data.lessons || "Unknown"}
                     </Typography>
                     <Typography variant="subtitle1" gutterBottom sx={{ fontWeight: 'bold', mb: 2 }}>
-                      {data.author || "Anonymous"}
+                        {data.author || "Anonymous"}
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <Button 
-                  variant="contained" 
-                  color="primary" 
-                  href={data.link} 
-                  sx={{
-                    width: '100%',
-                    padding: 1,
-                    background: (theme) => theme.palette.background.default,
-                    border: (theme) => `1px solid ${theme.palette.text.primary}`,
-                    color: (theme) => theme.palette.text.primary,
-                    transition: 'background 0.3s ease',
-                    '&:hover': {
-                      background: (theme) => theme.palette.secondary.main,
-                      textDecoration: 'none'
-                    }
-                  }}
-                >
-                  View Project
-                </Button>
               </Card>
             </Grid>
           ))}
