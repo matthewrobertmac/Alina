@@ -26,7 +26,7 @@ export const Services = () => {
             </Col>
             <Col lg="7" className="d-flex align-items-center">
               <div>
-                <p>With years of experience, I offer interactive and engaging lessons that combine cultural understanding to encourage language exploration and creativity.</p>
+                <p>As an experienced language teacher fluent in English, Ukrainian, and Russian, I offer comprehensive lessons tailored to individual needs. My unique teaching methods blend cultural insights with interactive exercises, ensuring a holistic learning experience that stimulates both the mind and the soul.</p>
               </div>
             </Col>
           </Row>
@@ -36,7 +36,7 @@ export const Services = () => {
             </Col>
             <Col lg="7" className="d-flex align-items-center">
               <div>
-                <p>My passion lies in crafting captivating poems that resonate deeply with readers. Let me help you express your emotions and ideas through words.</p>
+                <p>With a natural flair for words and emotions, I craft poems that tug at heartstrings. Whether you're seeking to communicate a narrative, an emotion, or a vivid scene, my creative writing services can breathe life into your thoughts, making them resonate with readers universally.</p>
               </div>
             </Col>
           </Row>
@@ -46,7 +46,7 @@ export const Services = () => {
             </Col>
             <Col lg="7" className="d-flex align-items-center">
               <div>
-                <p>Fluent in English, Ukrainian, and Russian, I specialize in translating poetry while preserving its essence and beauty across languages.</p>
+                <p>Poetry translation is an art of preserving the emotion, rhythm, and essence of the original piece. Leveraging my linguistic prowess in English, Ukrainian, and Russian, I ensure that translated poems convey their intended emotion and meaning, regardless of the language barrier.</p>
               </div>
             </Col>
           </Row>
@@ -59,7 +59,7 @@ export const Services = () => {
                 return (
                   <div className="service_ py-4" key={i}>
                     <h5 className="service__title">{data.title}</h5>
-                    <p className="service_desc">{data.description}</p>
+                    <p className="service_desc">Harness the power of compelling language to elevate your brand's presence. With tailored content and articles, I can enhance your brand image, drive engagement, and foster a strong connection with your target audience.</p>
                   </div>
                 );
               })}
