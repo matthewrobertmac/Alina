@@ -21,18 +21,31 @@ const introdata = {
     // your_img_url: "https://storage.googleapis.com/matermemoriae/Alina%20Photos/alina_washout_transparent_pink.png",
 };
 
-const dataabout = {
-    title: "A bit about my self",
-    aboutme: `Experienced language teacher with a passion for creative writing and a talent for translating poetry. Fluent in English, Ukrainian, and Russian, I have spent years honing my teaching skills and immersing myself in the beauty of language. My love for languages extends beyond teaching, as I thoroughly enjoy writing poems and translating them to and from various languages. Currently, I am expanding my linguistic repertoire by learning Spanish.
+// const dataabout = {
+//     title: "A bit about my self",
+//     aboutme: `Experienced language teacher with a passion for creative writing and a talent for translating poetry. Fluent in English, Ukrainian, and Russian, I have spent years honing my teaching skills and immersing myself in the beauty of language. My love for languages extends beyond teaching, as I thoroughly enjoy writing poems and translating them to and from various languages. Currently, I am expanding my linguistic repertoire by learning Spanish.
 
-    My teaching methods combine cultural understanding with interactive and engaging lessons, fostering an environment that encourages language exploration and creativity.
+//     My teaching methods combine cultural understanding with interactive and engaging lessons, fostering an environment that encourages language exploration and creativity.
     
-    Outside the classroom, my true joy lies in creative writing. I find immense satisfaction in crafting captivating poems that touch the hearts of readers. The ability to express emotions and ideas through words is a gift I cherish.
+//     Outside the classroom, my true joy lies in creative writing. I find immense satisfaction in crafting captivating poems that touch the hearts of readers. The ability to express emotions and ideas through words is a gift I cherish.
     
-    Driven by a deep passion for words and language, I am eager to take on new challenges and opportunities that allow me to create and write. Whether it be crafting my own works or breathing life into the words of others through translation.
+//     Driven by a deep passion for words and language, I am eager to take on new challenges and opportunities that allow me to create and write. Whether it be crafting my own works or breathing life into the words of others through translation.
     
-    If you have a project that requires linguistic expertise, a creative touch, and a dedication to preserving the essence of the written word, I would love to connect and collaborate. I'll help you to promote your brand and sell any kind of product by writing articles & posts to your or your brand's social media!`,
+//     If you have a project that requires linguistic expertise, a creative touch, and a dedication to preserving the essence of the written word, I would love to connect and collaborate. I'll help you to promote your brand and sell any kind of product by writing articles & posts to your or your brand's social media!`,
+// };
+const dataabout = {
+    title: "Discover My Linguistic Journey",
+    aboutme: `As a seasoned language instructor, my heart beats for the nuances of language — its rhythm, its melody, its poetry. With proficiency in English, Ukrainian, and Russian, I've dedicated years to perfecting the art of teaching, always immersing myself in the rich tapestry of languages. But teaching is just one facet of my passion. I am a poet at heart, crafting verses that resonate, and translating poetry across diverse languages, always retaining its essence. As I dive into the vibrant world of Spanish, my linguistic journey expands further.
+
+    I believe in teaching that goes beyond textbooks. My lessons are a blend of cultural insights and interactive modules, creating a space where language isn't just learned but experienced.
+
+    Beyond the classroom, the world of creative writing beckons me. Every poem I pen is a piece of my soul, a symphony of words meant to touch the reader's heart. To me, the power of articulating emotions and ideas is a cherished gift.
+
+    I thrive on challenges, always seeking avenues to write, create, and translate. Whether it's crafting my own masterpieces or translating others', the magic of words never ceases to enthrall me.
+
+    If you're in search of a linguistic maestro with a creative flair, let's embark on a journey together. Let me elevate your brand and amplify your message through compelling articles and posts for your social media presence.`,
 };
+
 const worktimeline = [{
         jobtitle: "language tutor",
         where: "italki",
