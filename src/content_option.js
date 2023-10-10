@@ -81,7 +81,7 @@ const skills = [{
     },
     {
         name: "Translation",
-        value: 95,
+        value: 100,
     },
     {
         name: "Poetry Translation",
